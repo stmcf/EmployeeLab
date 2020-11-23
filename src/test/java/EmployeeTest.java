@@ -4,6 +4,7 @@ import staff.Employee;
 import staff.techstaff.Developer;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 public class EmployeeTest {
 
@@ -38,5 +39,24 @@ public class EmployeeTest {
     @Test
     public void employeeGetsABonus(){
         assertEquals(696.9969, employee.payBonus(), 0.00);
+    }
+
+    @Test
+    public void employeeCannotGetAPayCut(){
+        employee.payRise(-100.00);
+        assertEquals(69699.69, employee.getSalary(), 0.00);
+    }
+
+    @Test
+    public void employerCanChangeEmployeeName(){
+        employee.setName("Spanky Spankson");
+        assertEquals("Spanky Spankson", employee.getName());
+    }
+
+    @Test
+    public void employerCantInputNoName(){
+        employee.setName("    ");
+        assertEquals("Graham Grahamson", employee.getName());
+
     }
 }

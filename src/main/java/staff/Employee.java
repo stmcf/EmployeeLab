@@ -25,9 +25,24 @@ public abstract class Employee {
     }
 
     public void payRise(double rise){
-        this.salary = this.salary + rise;
+        if(rise > 0 ){
+        this.salary += rise;
+        }
     }
     public double payBonus(){
         return this.salary/100;
     }
+
+    public void setName(String name){
+        if (name != null && name.length() > 0) {
+            this.name = name;
+        }
+    }
+
+//    public static boolean checkInput(String name) {
+//        if(name != null && !str.trim().isEmpty())
+//            return false;
+//        return true;
+////    }
+//    }
 }
