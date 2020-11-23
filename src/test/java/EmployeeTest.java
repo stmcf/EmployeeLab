@@ -55,7 +55,7 @@ public class EmployeeTest {
 
     @Test
     public void employerCantInputNoName(){
-        employee.setName("    ");
+        employee.setName("");
         assertEquals("Graham Grahamson", employee.getName());
 
     }

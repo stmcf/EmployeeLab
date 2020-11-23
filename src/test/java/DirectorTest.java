@@ -43,4 +43,9 @@ public class DirectorTest {
         director.payRise(100.00);
         assertEquals(1001201.11, director.getSalary(),0.01);
     }
+
+    @Test
+    public void employeeGetsABonus(){
+        assertEquals(20022.0222, director.payBonus(), 0.00);
+    }
 }

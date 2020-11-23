@@ -29,9 +29,12 @@ public abstract class Employee {
         this.salary += rise;
         }
     }
+
     public double payBonus(){
         return this.salary/100;
     }
+
+
 
     public void setName(String name){
         if (name != null && name.length() > 0) {
