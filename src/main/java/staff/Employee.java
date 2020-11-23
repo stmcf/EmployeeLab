@@ -12,7 +12,8 @@ public abstract class Employee {
         this.salary = salary;
     }
 
-
-
+    public String getName(){
+        return this.name;
+    }
 
 }
