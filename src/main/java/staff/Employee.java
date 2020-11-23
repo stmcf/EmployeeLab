@@ -16,4 +16,12 @@ public abstract class Employee {
         return this.name;
     }
 
+    public String getNumber(){
+        return this.niNumber;
+    }
+
+    public double getSalary(){
+        return this.salary;
+    }
+
 }
