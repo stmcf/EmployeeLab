@@ -18,4 +18,10 @@ public class DeveloperTest {
         assertEquals("John Johnson", developer.getName());
     }
 
+    @Test
+    public void employeCanGetPayRise(){
+        developer.payRise(100.00);
+        assertEquals(25100.25, developer.getSalary(),0.01);
+    }
+
 }

@@ -37,4 +37,10 @@ public class DirectorTest {
     public void directorHasBudget(){
         assertEquals(100000000000012.10, director.getBudget(), 0.01);
     }
+
+    @Test
+    public void employeCanGetPayRise(){
+        director.payRise(100.00);
+        assertEquals(1001201.11, director.getSalary(),0.01);
+    }
 }
